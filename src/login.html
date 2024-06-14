@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Login - Accessibility course</title>
+    <link href="../output.css" rel="stylesheet" />
+    <meta charset="UTF-8" content-type="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="'description" content="Page de login du site" />
+  </head>
+  <body class="flex flex-col h-screen w-screen">
+    <header class="sticky top-0 bg-white">
+      <div
+        class="flex flex-row w-full min-h-fit items-center p-8 mb-4 justify-start"
+      >
+        <nav class="flex flex-row align-center">
+          <a href="../index.html">
+            <img
+              class="w-24 h-24 mr-8"
+              src="../assets/site_logo.png"
+              alt="Logo website"
+            />
+          </a>
+        </nav>
+        <h1 class="text-2xl font-bold">Accessibility Course</h1>
+      </div>
+    </header>
+    <main
+      class="flex flex-1 w-full h-full items-center justify-center bg-slate-200"
+    >
+      <div
+        class="w-1/3 flex flex-col items-center justify-start bg-white rounded-xl h-3/5 p-8"
+      >
+        <p class="text-4xl mb-4">👨‍🍳</p>
+        <h2 class="text-2xl">Connectez-vous</h2>
+        <form
+          class="flex flex-col items-center justify-evenly flex-1 gap-4"
+          action="../index.html"
+          method="GET"
+        >
+          <div class="flex flex-col items-start invalid:text-red-900">
+            <label for="email-form">Email *</label>
+            <input
+              id="email-form"
+              class="text-lg p-4 border-solid border-2 border-slate-400 rounded-l"
+              type="email"
+              placeholder="Entrez votre email"
+              autofocus
+              required
+            />
+          </div>
+          <div class="flex flex-col items-start invalid:text-red-400 relative">
+            <label for="pass-form">Mot de passe *</label>
+            <input
+              id="pass-form"
+              class="text-lg p-4 border-solid border-2 border-slate-400 rounded-l invalid:text-red-400"
+              type="password"
+              placeholder="Saisir le mot de passe"
+              autocomplete="current-password"
+              required
+            />
+            <input
+              aria-label="Show password"
+              type="checkbox"
+              class="absolute right-5 top-12"
+              onclick="togglePasswordVisibility()"
+            />
+          </div>
+          <p class="self-start text-xs">* Champs obligatoires</p>
+
+          <button
+            class="p-4 bg-slate-700 text-white rounded-l text-xl"
+            type="submit"
+          >
+            Se connecter
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="flex items-center justify-end h-24 p-6">
+      <p class="italic">
+        Site pratique sur l'accessibilite Jules Bloux Ynov 2024
+      </p>
+    </footer>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

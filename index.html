@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Accessibility Course</title>
+    <link href="./output.css" rel="stylesheet" />
+    <meta charset="UTF-8" content-type="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="'description" content="Accueil du site" />
+  </head>
+  <body>
+    <header class="sticky top-0 bg-white">
+      <div
+        class="flex flex-row w-full min-h-fit items-center p-8 mb-4 justify-between"
+      >
+        <a href="../index.html">
+          <img
+            class="w-24 h-24 mr-8"
+            src="../assets/site_logo.png"
+            alt="Logo website"
+            aria-label="Go to home"
+          />
+        </a>
+        <nav class="flex flex-row align-center">
+          <ul class="flex flex-row items-center">
+            <li>
+              <a
+                class="p-4 text-xl hover:bg-slate-50 hover:cursor-pointer rounded-l"
+                href="../index.html"
+                aria-label="Go to Mon Blog"
+                >Mon Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="text-xl p-4 hover:bg-slate-50 hover:cursor-pointer rounded-l"
+          href="./src/login.html"
+          >LOGIN</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="flex flex-col items-center">
+        <h1 class="text-2xl font-bold">Liste des recettes</h1>
+
+        <article
+          class="flex group flex-row w-10/12 hover:w-11/12 transition-all duration-300 ease-in-out justify-between rounded-2xl gap-4 p-4 pl-8 hover:cursor-pointer hover:bg-slate-50"
+        >
+          <div class="flex flex-col items-start justify-center">
+            <div class="flex flex-col items-start justify-center">
+              <div class="text-2xl mb-4">
+                <h2>Le gratin dauphinois</h2>
+              </div>
+              <div>
+                <ol class="list-decimal flex flex-col gap-2">
+                  <li>
+                    Eplucher, laver et couper les pommes de terre en rondelles
+                    fines (NB : ne pas les laver APRES les avoir coupées, car
+                    l'amidon est nécessaire à une consistance correcte).
+                  </li>
+                  <li>Hacher l'ail très finement.</li>
+                  <li>
+                    Porter à ébullition dans une casserole le lait, l'ail, le
+                    sel, le poivre et la muscade puis y plonger les pommes de
+                    terre et laisser cuire 10 à 15 min, selon leur fermeté.
+                  </li>
+                  <li>
+                    Préchauffer le four à 180°C (thermostat 6) et beurrer un
+                    plat à gratin à l'aide d'une feuille de papier essuie-tout.
+                  </li>
+                  <li>
+                    Enfourner pour 50 min à 1 heure de cuisson. Utiliser le lait
+                    restant de la cuisson des pommes de terre pour faire une
+                    soupe ou une purée dans la foulée.
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <a
+              class="decoration-solid opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4 hover:bg-slate-100"
+              href="./src/article.html"
+              >+ Aller aux details</a
+            >
+          </div>
+
+          <img
+            src="./assets/recettes/gratin_dauphinois.jpeg"
+            alt="gratin dauphinois"
+            class="max-w-96 aspect-square max-h-72 p-5 rounded-2xl"
+          />
+        </article>
+        <article
+          class="flex group flex-row w-10/12 hover:w-11/12 transition-all duration-300 ease-in-out justify-between rounded-l gap-4 p-4 pl-8 hover:cursor-pointer hover:bg-slate-50"
+        >
+          <div class="flex flex-col items-start justify-center">
+            <div class="flex flex-col items-start justify-center">
+              <div class="text-2xl mb-4">
+                <h2>La quiche lorraine</h2>
+              </div>
+              <div>
+                <ol class="list-decimal flex flex-col">
+                  <li>
+                    Pré-chauffer le four à 200°C (thermostat 6-7). Dérouler la
+                    pâte brisée et la placer dans un plat à tarte. Piquer le
+                    fond avec une fourchette.
+                  </li>
+                  <li>Faire dorer les lardons.</li>
+                  <li>
+                    Pendant ce temps, mélanger les oeufs battus et la crème
+                    fraîche.
+                  </li>
+                  <li>
+                    Une fois les lardons dorés, les mélanger à la préparation
+                    aux oeufs.
+                  </li>
+                  <li>
+                    Saler, poivrer, et ajouter la muscade selon votre
+                    convenance.
+                  </li>
+                  <li>Verser la préparation sur le fond de pâte.</li>
+                  <li>Mettre au four pendant 30 min.</li>
+                </ol>
+              </div>
+            </div>
+            <a
+              class="decoration-solid opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4 hover:bg-slate-100"
+              href="./src/article.html"
+              >+ Aller aux details</a
+            >
+          </div>
+          <img
+            src="./assets/recettes/quiche_lorraine.jpeg"
+            alt="quiche lorraine"
+            class="max-w-96 aspect-square max-h-72 p-5 rounded-2xl"
+          />
+        </article>
+        <article
+          class="flex group flex-row w-10/12 hover:w-11/12 transition-all duration-300 ease-in-out justify-between rounded-l gap-4 p-4 pl-8 hover:cursor-pointer hover:bg-slate-50"
+        >
+          <div class="flex flex-col items-start justify-center">
+            <div class="flex flex-col items-start justify-center">
+              <div class="text-2xl mb-4">
+                <h2>Le gratin de choux-fleurs</h2>
+              </div>
+              <div>
+                <ol class="list-decimal flex flex-col gap-2">
+                  <li>
+                    Faire cuire le chou-fleur dans l'eau bouillante salée 10 mn.
+                  </li>
+                  <li>
+                    Faire une sauce béchamel : dans une casserole, faire fondre
+                    le beurre et y ajouter la farine. on fait un roux avec le
+                    fouet et on ajoute le lait petit à petit en faisant réduire
+                    la sauce.
+                  </li>
+                  <li>
+                    On ajoute noix de muscade, sel et poivre pour
+                    l'assaisonnement.
+                  </li>
+                  <li>
+                    Dans un plat à gratin, on fait une couche de chou-fleur, une
+                    couche de lardons, une autre couche de choux, on ajoute la
+                    sauce par dessus, puis enfin du gruyère pour gratiner le
+                    tout.
+                  </li>
+                  <li>Mettre dans un four chaud pendant 30 mn.</li>
+                </ol>
+              </div>
+            </div>
+            <a
+              class="decoration-solid opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4 hover:bg-slate-100"
+              href="./src/article.html"
+              >+ Aller aux details</a
+            >
+          </div>
+          <img
+            src="./assets/recettes/gratin_choux-fleurs.jpeg"
+            alt="gratin de choux fleurs "
+            class="max-w-96 aspect-square max-h-72 p-5 rounded-2xl"
+          />
+        </article>
+        <article
+          class="flex group flex-row w-10/12 hover:w-11/12 transition-all duration-300 ease-in-out justify-between rounded-l gap-4 p-4 pl-8 hover:cursor-pointer hover:bg-slate-50"
+        >
+          <div class="flex flex-col items-start justify-center">
+            <div class="flex flex-col items-start justify-center">
+              <div class="text-2xl mb-4">
+                <h2>Le pâté de patate</h2>
+              </div>
+              <div>
+                <ol class="list-decimal flex flex-col gap-2">
+                  <li>
+                    Eplucher les pommes de terre, les laver, les sécher, les
+                    découper en fines lamelles. Epluchez et émincer l'oignon,
+                    mélanger avec les pommes de terre, salez, poivrer.
+                  </li>
+                  <li>
+                    Disposer une des 2 pâtes feuilletée dans le fond d'une
+                    plaque à tarte, remplir avec les pommes de terre.
+                  </li>
+                  <li>
+                    Ajouter la moitié de la crème fraîche. Recouvrir le tout
+                    avec la 2ème pâte à tarte en la soudant avec la 1ère, puis
+                    badigeonner la pâte supérieure avec un jaune d'oeuf.
+                  </li>
+                  <li>Faire une cheminée centrale.</li>
+                  <li>Cuire au four (thermostat 6/7) environ 1 heure.</li>
+                  <li>Déguster avec le reste de la crème.</li>
+                </ol>
+              </div>
+            </div>
+            <a
+              class="decoration-solid opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4 hover:bg-slate-100"
+              href="./src/article.html"
+              >+ Aller aux details</a
+            >
+          </div>
+          <img
+            src="./assets/recettes/pate_patate.jpeg"
+            alt="pâté de patate"
+            class="max-w-96 aspect-square max-h-72 p-5 rounded-2xl"
+          />
+        </article>
+        <article
+          class="flex group flex-row w-10/12 hover:w-11/12 transition-all duration-300 ease-in-out justify-between rounded-l items-center gap-4 p-4 pl-8 hover:cursor-pointer hover:bg-slate-50"
+        >
+          <div class="flex flex-col items-start justify-center">
+            <div class="flex flex-col items-start justify-center">
+              <div class="text-2xl mb-4">
+                <h2>Les pâtes aux cèpes</h2>
+              </div>
+              <div>
+                <ol class="list-decimal flex flex-col gap-2">
+                  <li>
+                    Mettre les cèpes séchés dans un saladier et les recouvrir
+                    d'eau à hauteur, afin de les réhydrater. Laisser tremper 1/2
+                    journée, par exemple en début d'après-midi pour les préparer
+                    le soir.
+                  </li>
+                  <li>
+                    Environ 1h avant de les cuisiner, changer l'eau du saladier
+                    et jeter l'eau sale. Il faudra cependant conserver cette
+                    seconde eau pour la cuisson des cèpes.
+                  </li>
+                  <li>
+                    Le moment venu, faire revenir l'échalote finement émincée
+                    dans un filet d'huile d'olive pendant 1 minute. Y ajouter
+                    ensuite les cèpes, que l'on aura au préalable serrés entre
+                    ses doigts pour les égoutter grossièrement.
+                  </li>
+                  <li>
+                    Les faire revenir sur feu moyen pendant 2 minutes, puis
+                    arroser le tout de l'eau dans laquelle elles ont trempé.
+                    Augmenter le feu: il doit être fort.
+                  </li>
+                  <li>
+                    Porter à ébullition et laisser l'eau s'évaporer et réduire
+                    de moitié pendant quelques minutes (il faut surveiller).
+                  </li>
+                  <li>
+                    Ajouter enfin la crème fraîche, bien mélanger pour obtenir
+                    une crème homogène: elle a la couleur marron des cèpes.
+                    Assaisonner et réserver.
+                  </li>
+                  <li>
+                    Porter de l'eau à ébullition dans une casserole et y plonger
+                    les pâtes, saler avec du gros sel, arroser d'un filet
+                    d'huile d'olive et laisser cuire (en général, 12 minutes
+                    environ: c'est indiqué sur le paquet).
+                  </li>
+                  <li>
+                    Egoutter les pâtes et les verser dans la poêle avec la crème
+                    aux cèpes: mélanger l'ensemble sur feu doux et servir
+                    aussitôt, généreusement saupoudré de parmesan fraîchement
+                    râpé.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <a
+              class="decoration-solid opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4 hover:bg-slate-100"
+              href="./src/article.html"
+              >+ Aller aux details</a
+            >
+          </div>
+          <img
+            src="./assets/recettes/pates_cepes.jpeg"
+            alt="pâtes aux cèpes"
+            class="max-w-96 aspect-square max-h-72 p-5 rounded-2xl"
+          />
+        </article>
+      </section>
+    </main>
+    <footer class="flex items-center justify-evenly h-24 p-6">
+      <p>Contact: Jules Bloux</p>
+      <p>Recettes récupérée de Marmiton</p>
+    </footer>
+  </body>
+</html>
